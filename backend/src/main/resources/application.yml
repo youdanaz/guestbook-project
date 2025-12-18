@@ -1,9 +1,13 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/guestbook
+    url: jdbc:mysql://localhost:3306/guestbook?serverTimezone=UTC&characterEncoding=UTF-8
     username: root
     password: root1234
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jackson:
+    serialization:
+      indent_output: true
 
   jpa:
     hibernate:
